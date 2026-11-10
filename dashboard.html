@@ -1,0 +1,257 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HISABOO | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<input type="checkbox" id="theme-toggle">
+<label for="theme-toggle" class="theme-switch">
+    <span class="sun-icon">☀️</span>
+    <span class="moon-icon">🌙</span>
+    <span>Switch Theme</span>
+</label>
+<div class="app-layout">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <a href="dashboard.html" class="brand-logo">
+            <span class="logo-icon">H</span>
+            HISABOO<span class="logo-dot">.</span>
+        </a>
+        <p class="sidebar-label">MAIN MENU</p>
+        <nav class="side-nav">
+            <a href="dashboard.html" class="side-link active">
+                ◈ Dashboard
+            </a>
+            <a href="add-expense.html" class="side-link">
+                ＋ Add Expense
+            </a>
+            <a href="expenses.html" class="side-link">
+                ▤ All Expenses
+            </a>
+            <a href="#yourself" class="side-link">
+                💙 Yourself
+            </a>
+        </nav>
+        <p class="sidebar-label">ACCOUNT</p>
+        <nav class="side-nav">
+            <a href="index.html" class="side-link">
+                ↪ Logout
+            </a>
+        </nav>
+    </aside>
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <header class="topbar">
+            <div>
+                <p class="topbar-kicker">OVERVIEW</p>
+                <h1>Dashboard</h1>
+            </div>
+            <div class="avatar">S</div>
+        </header>
+        <!-- WELCOME BANNER -->
+        <section class="welcome-banner">
+            <div>
+                <span class="welcome-label">WELCOME BACK</span>
+                <h2>Hello, Simmi! 👋</h2>
+                <p>Here's your financial overview for today.</p>
+            </div>
+            <a href="add-expense.html" class="primary-btn">
+                + Add Expense
+            </a>
+        </section>
+        <!-- SUMMARY CARDS -->
+        <section class="summary-grid">
+            <article class="summary-card">
+                <div class="summary-top">
+                    Total Balance
+                    <span class="summary-icon">◈</span>
+                </div>
+                <h3>₹48,250</h3>
+                <small>Available balance</small>
+            </article>
+            <article class="summary-card">
+                <div class="summary-top">
+                    Total Income
+                    <span class="summary-icon">↗</span>
+                </div>
+                <h3>₹65,000</h3>
+                <small>Monthly income</small>
+            </article>
+            <article class="summary-card">
+                <div class="summary-top">
+                    Total Expenses
+                    <span class="summary-icon">↘</span>
+                </div>
+                <h3>₹16,750</h3>
+                <small>Monthly expenses</small>
+            </article>
+            <article class="summary-card">
+                <div class="summary-top">
+                    Savings
+                    <span class="summary-icon">✧</span>
+                </div>
+                <h3>₹48,250</h3>
+                <small>Remaining amount</small>
+            </article>
+        </section>
+        <!-- CHART AND QUICK SUMMARY -->
+        <section class="dashboard-grid">
+            <article class="panel">
+                <div class="panel-heading">
+                    <div>
+                        <h3>Expense Overview</h3>
+                        <p>Your weekly spending summary</p>
+                    </div>
+                </div>
+                <div class="chart-area">
+                    <div class="chart-column">
+                        <i style="height:45%"></i>
+                        <small>Mon</small>
+                    </div>
+                    <div class="chart-column">
+                        <i style="height:70%"></i>
+                        <small>Tue</small>
+                    </div>
+                    <div class="chart-column">
+                        <i style="height:55%"></i>
+                        <small>Wed</small>
+                    </div>
+                    <div class="chart-column">
+                        <i style="height:85%"></i>
+                        <small>Thu</small>
+                    </div>
+                    <div class="chart-column">
+                        <i style="height:60%"></i>
+                        <small>Fri</small>
+                    </div>
+                    <div class="chart-column">
+                        <i style="height:95%"></i>
+                        <small>Sat</small>
+                    </div>
+                    <div class="chart-column">
+                        <i style="height:40%"></i>
+                        <small>Sun</small>
+                    </div>
+                </div>
+            </article>
+            <article class="panel">
+                <div class="panel-heading">
+                    <div>
+                        <h3>Quick Summary</h3>
+                        <p>Your spending details</p>
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-top">Food & Dining</div>
+                    <h3>₹5,500</h3>
+                </div>
+                <br>
+                <div class="summary-card">
+                    <div class="summary-top">Transportation</div>
+                    <h3>₹3,200</h3>
+                </div>
+            </article>
+        </section>
+        <!-- RECENT TRANSACTIONS -->
+        <section class="panel">
+            <div class="panel-heading">
+                <div>
+                    <h3>Recent Transactions</h3>
+                    <p>Your latest expense records</p>
+                </div>
+                <a href="expenses.html" class="text-link">
+                    View All →
+                </a>
+            </div>
+            <div class="table-wrap">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Expense</th>
+                            <th>Category</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Grocery Shopping</strong></td>
+                            <td>Food</td>
+                            <td>10 Nov 2026</td>
+                            <td class="amount-cell">₹2,500</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Electricity Bill</strong></td>
+                            <td>Utilities</td>
+                            <td>08 Nov 2026</td>
+                            <td class="amount-cell">₹1,800</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cab Booking</strong></td>
+                            <td>Travel</td>
+                            <td>06 Nov 2026</td>
+                            <td class="amount-cell">₹650</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <!-- YOURSELF NOTES SECTION -->
+        <section class="personal-notes" id="yourself">
+            <div class="notes-heading">
+                <span class="notes-sticker">💌</span>
+                <div>
+                    <h2>A Note for You</h2>
+                    <p>A little reminder for your financial journey ✨</p>
+                </div>
+                <span class="notes-sparkle">✦</span>
+            </div>
+            <div class="notes-grid">
+                <div class="note-card note-blue">
+                    <span class="note-icon">🫶</span>
+                    <h3>Take It Easy</h3>
+                    <p>
+                        Don't take too much stress. We'll manage
+                        everything one step at a time. You don't
+                        have to figure it all out today.
+                    </p>
+                </div>
+                <div class="note-card note-sky">
+                    <span class="note-icon">🌱</span>
+                    <h3>Every Expense Has a Story</h3>
+                    <p>
+                        Your expenses are not just numbers. They
+                        are little chapters in your journey towards
+                        becoming financially mature.
+                    </p>
+                </div>
+                <div class="note-card note-navy">
+                    <span class="note-icon">💙</span>
+                    <h3>Money Is Not Everything</h3>
+                    <p>
+                        Money is a tool, not your worth. Spend wisely,
+                        save patiently and never forget that your
+                        peace matters too.
+                    </p>
+                </div>
+            </div>
+            <div class="my-note-box">
+                <div class="my-note-title">
+                    <span>📝</span>
+                    <h3>A Little Note to Myself</h3>
+                </div>
+                <textarea
+                    class="personal-note-input"
+                    placeholder="Write something positive for yourself... 💙"
+                ></textarea>
+                <p>✨ Your journey, your pace, your story.</p>
+            </div>
+        </section>
+        <footer class="page-footer">
+            © 2026 HISABOO | Personal Expense Tracker
+        </footer>
+    </main>
+</div>
+</body>
+</html>

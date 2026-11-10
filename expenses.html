@@ -1,0 +1,200 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hisabo | All Expenses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle">
+
+<label for="theme-toggle" class="theme-switch">
+    <span class="sun-icon">☀️</span>
+    <span class="moon-icon">🌙</span>
+    <span>Switch Theme</span>
+</label>
+<div class="app-layout">
+    <aside class="sidebar">
+        <a href="dashboard.html" class="brand-logo">
+            <span class="logo-icon">H</span>
+            hisabo<span class="logo-dot">.</span>
+        </a>
+        <p class="sidebar-label">MAIN MENU</p>
+        <nav class="side-nav">
+            <a href="dashboard.html" class="side-link">
+                ◈ Dashboard
+            </a>
+            <a href="add-expense.html" class="side-link">
+                ＋ Add Expense
+            </a>
+            <a href="expenses.html" class="side-link active">
+                ▤ All Expenses
+            </a>
+        </nav>
+        <p class="sidebar-label">ACCOUNT</p>
+        <nav class="side-nav">
+            <a href="index.html" class="side-link">
+                ↪ Logout
+            </a>
+        </nav>
+    </aside>
+    <main class="main-content">
+        <header class="topbar">
+            <div>
+                <p class="topbar-kicker">TRANSACTION HISTORY</p>
+                <h1>All Expenses</h1>
+            </div>
+            <div class="avatar">S</div>
+        </header>
+        <section class="page-intro">
+            <span class="welcome-label">YOUR RECORDS</span>
+            <h2>Expense History</h2>
+            <p>
+                View and manage your recorded transactions.
+            </p>
+        </section>
+        <!-- Expense summary -->
+        <section class="summary-grid">
+            <article class="summary-card">
+                <div class="summary-top">
+                    Total Expenses
+                </div>
+                <h3>₹16,750</h3>
+                <small>Current month</small>
+            </article>
+            <article class="summary-card">
+                <div class="summary-top">
+                    Total Records
+                </div>
+                <h3>24</h3>
+                <small>Recorded transactions</small>
+            </article>
+            <article class="summary-card">
+                <div class="summary-top">
+                    Average Expense
+                </div>
+                <h3>₹698</h3>
+                <small>Per transaction</small>
+            </article>
+            <article class="summary-card">
+                <div class="summary-top">
+                    Highest Expense
+                </div>
+                <h3>₹4,500</h3>
+                <small>Single transaction</small>
+            </article>
+        </section>
+        <!-- Search and filter section -->
+        <section class="panel">
+            <div class="panel-heading">
+                <div>
+                    <h3>All Transactions</h3>
+                    <p>Complete list of your expenses</p>
+                </div>
+                <a href="add-expense.html" class="primary-btn">
+                    + Add New
+                </a>
+            </div>
+            <div class="filter-bar">
+                <div class="search-box">
+                    <input
+                        type="search"
+                        placeholder="Search expenses..."
+                        aria-label="Search expenses"
+                    >
+                </div>
+                <select class="filter-select" aria-label="Filter category">
+                    <option>All Categories</option>
+                    <option>Food & Dining</option>
+                    <option>Transportation</option>
+                    <option>Shopping</option>
+                    <option>Education</option>
+                    <option>Healthcare</option>
+                </select>
+                <select class="filter-select" aria-label="Filter month">
+                    <option>All Months</option>
+                    <option>November</option>
+                    <option>October</option>
+                    <option>September</option>
+                </select>
+            </div>
+            <!-- Expense records table -->
+            <div class="table-wrap">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Expense Name</th>
+                            <th>Category</th>
+                            <th>Date</th>
+                            <th>Payment</th>
+                            <th>Amount</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Grocery Shopping</strong></td>
+                            <td>Food & Dining</td>
+                            <td>10 Nov 2026</td>
+                            <td>UPI</td>
+                            <td class="amount-cell">₹2,500</td>
+                            <td class="action-links">
+                                <a href="add-expense.html">Edit</a>
+                                <a href="#" class="delete-link">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Electricity Bill</strong></td>
+                            <td>Utilities</td>
+                            <td>08 Nov 2026</td>
+                            <td>Net Banking</td>
+                            <td class="amount-cell">₹1,800</td>
+                            <td class="action-links">
+                                <a href="add-expense.html">Edit</a>
+                                <a href="#" class="delete-link">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cab Booking</strong></td>
+                            <td>Transportation</td>
+                            <td>06 Nov 2026</td>
+                            <td>UPI</td>
+                            <td class="amount-cell">₹650</td>
+                            <td class="action-links">
+                                <a href="add-expense.html">Edit</a>
+                                <a href="#" class="delete-link">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>College Books</strong></td>
+                            <td>Education</td>
+                            <td>04 Nov 2026</td>
+                            <td>Cash</td>
+                            <td class="amount-cell">₹1,200</td>
+                            <td class="action-links">
+                                <a href="add-expense.html">Edit</a>
+                                <a href="#" class="delete-link">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Shopping</strong></td>
+                            <td>Shopping</td>
+                            <td>02 Nov 2026</td>
+                            <td>Debit Card</td>
+                            <td class="amount-cell">₹3,500</td>
+                            <td class="action-links">
+                                <a href="add-expense.html">Edit</a>
+                                <a href="#" class="delete-link">Delete</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <footer class="page-footer">
+            © 2026 Hisabo | Personal Expense Tracker
+        </footer>
+    </main>
+</div>
+</body>
+</html>
