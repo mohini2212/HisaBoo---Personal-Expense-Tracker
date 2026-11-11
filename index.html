@@ -1,126 +1,120 @@
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HISABOO | Your Money, Your Journey</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<input type="checkbox" id="theme-toggle">
-<label for="theme-toggle" class="theme-switch">
-    <span class="sun-icon">☀️</span>
-    <span class="moon-icon">🌙</span>
-    <span>Switch Theme</span>
-</label>
-<main class="auth-layout">
-    <section class="brand-section">
-        <a href="index.html" class="brand-logo">
-            <span class="logo-icon">H</span>
-            HISABOO<span class="logo-dot">.</span>
-        </a>
-        <div class="brand-eyebrow">
-            <span class="live-pulse"></span>
-            YOUR MONEY • YOUR JOURNEY
-        </div>
-        <h1>
-            Take control.
-            <span>Live financially free.</span>
-        </h1>
-        <p class="brand-description">
-            Track your expenses, understand your spending habits
-            and make smarter financial decisions.
-        </p>
-        <div class="visual-area front-visual">
-            <span class="float-sticker sticker-wallet">👛</span>
-            <span class="float-sticker sticker-coin">🪙</span>
-            <span class="float-sticker sticker-spark">✦</span>
-            <span class="float-sticker sticker-chart">📈</span>
-            <span class="orbit orbit-one"></span>
-            <span class="orbit orbit-two"></span>
-            <div class="finance-card">
-                <p>YOUR FINANCIAL OVERVIEW</p>
-                <p class="balance-label">Total Balance</p>
-                <h2>₹ 48,250.00</h2>
-                <div class="finance-card-footer">
-                    ↗ Stay consistent. Grow smarter.
-                </div>
-                <div class="finance-mini-stats">
-                    <div>
-                        <span>🎯</span>
-                        <strong>Spend mindfully</strong>
+    <input type="checkbox" id="theme-toggle">
+    <label for="theme-toggle" class="theme-switch">
+        <span class="sun-icon">☀️</span>
+        <span class="moon-icon">🌙</span>
+        <span>Switch Theme</span>
+    </label>
+    <main class="auth-layout">
+        <section class="brand-section">
+            <a href="index.html" class="brand-logo">
+                <span class="logo-icon">H</span>
+                HISABOO<span class="logo-dot">.</span>
+            </a>
+            <div class="brand-eyebrow">
+                <span class="live-pulse"></span>
+                YOUR MONEY • YOUR JOURNEY
+            </div>
+            <h1>
+                Take control.
+                <span>Live financially free.</span>
+            </h1>
+            <p class="brand-description">
+                Track your expenses, understand your spending habits
+                and make smarter financial decisions.
+            </p>
+            <div class="visual-area front-visual">
+                <span class="float-sticker sticker-wallet">👛</span>
+                <span class="float-sticker sticker-coin">🪙</span>
+                <span class="float-sticker sticker-spark">✦</span>
+                <span class="float-sticker sticker-chart">📈</span>
+                <span class="orbit orbit-one"></span>
+                <span class="orbit orbit-two"></span>
+                <div class="finance-card">
+                    <p>YOUR FINANCIAL OVERVIEW</p>
+                    <p class="balance-label">Total Balance</p>
+                    <h2>₹ 48,250.00</h2>
+                    <div class="finance-card-footer">
+                        ↗ Stay consistent. Grow smarter.
                     </div>
-                    <div>
-                        <span>💎</span>
-                        <strong>Save consistently</strong>
-                    </div>
-                    <div>
-                        <span>🚀</span>
-                        <strong>Grow confidently</strong>
+                    <div class="finance-mini-stats">
+                        <div>
+                            <span>🎯</span>
+                            <strong>Spend mindfully</strong>
+                        </div>
+                        <div>
+                            <span>💎</span>
+                            <strong>Save consistently</strong>
+                        </div>
+                        <div>
+                            <span>🚀</span>
+                            <strong>Grow confidently</strong>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="form-section">
-        <div class="form-wrapper">
-            <div class="form-heading">
-                <span class="form-orbit-icon">✧</span>
-                <span class="welcome-label">
-                    WELCOME BACK
-                </span>
-                <h2>Welcome back!</h2>
-                <p>
-                    Sign in to continue your journey towards
-                    smarter money management.
+        </section>
+        <section class="form-section">
+            <div class="form-wrapper">
+                <div class="form-heading">
+                    <span class="form-orbit-icon">✧</span>
+                    <span class="welcome-label">
+                        WELCOME BACK
+                    </span>
+                    <h2>Welcome back!</h2>
+                    <p>
+                        Sign in to continue your journey towards
+                        smarter money management.
+                    </p>
+                </div>
+                <form class="app-form" action="auth/login.php" method="POST">
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <div class="input-wrapper">
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="label-row">
+                            <label for="password">Password</label>
+                            <a href="#" class="text-link">
+                                Forgot password?
+                            </a>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="password" id="password" name="password" placeholder="Enter your password"
+                                required>
+                        </div>
+                    </div>
+                    <label class="remember-option">
+                        <input type="checkbox" name="remember">
+                        Remember me
+                    </label>
+                    <button type="submit" class="primary-btn">
+                        Enter HISABOO →
+                    </button>
+                </form>
+                <p class="signup-text">
+                    Don't have an account?
+                    <a href="signup.html">Create Account →</a>
                 </p>
             </div>
-            <form class="app-form">
-                <div class="input-group">
-                    <label for="email">Email Address</label>
-                    <div class="input-wrapper">
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="Enter your email address"
-                            required
-                        >
-                    </div>
-                </div>
-                <div class="input-group">
-                    <div class="label-row">
-                        <label for="password">Password</label>
-                        <a href="#" class="text-link">
-                            Forgot password?
-                        </a>
-                    </div>
-                    <div class="input-wrapper">
-                        <input
-                            type="password"
-                            id="password"
-                            name="password"
-                            placeholder="Enter your password"
-                            required
-                        >
-                    </div>
-                </div>
-                <label class="remember-option">
-                    <input type="checkbox" name="remember">
-                    Remember me
-                </label>
-                <a href="dashboard.html" class="primary-btn">
-                    Enter HISABOO →
-                </a>
-            </form>
-            <p class="signup-text">
-                Don't have an account?
-                <a href="signup.html">Create Account →</a>
-            </p>
-        </div>
-        <footer class="form-footer">
-            © 2026 HISABOO. All rights reserved.
-        </footer>
-    </section>
-</main>
+            <footer class="form-footer">
+                © 2026 HISABOO. All rights reserved.
+            </footer>
+        </section>
+    </main>
+    <script src="script.js" defer></script>
+    <script src="validation.js" defer></script>
 </body>
+
 </html>

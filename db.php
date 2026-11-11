@@ -1,14 +1,37 @@
+
 <?php
-// Database connection - included by all other PHP files using: include 'db.php';
-$host   = "localhost";
-$user   = "root";
-$pass   = "";            // XAMPP default password is empty
-$dbname = "expense_tracker";
 
-$conn = new mysqli($host, $user, $pass, $dbname);
+// ======================================
+// HISABOO - DATABASE CONNECTION
+// ======================================
 
-if ($conn->connect_error) {
-    die("Database connection failed: " . $conn->connect_error);
+// Database configuration
+$host = "localhost";
+$username = "root";
+$password = "";
+$database = "expense_tracker";
+
+// Enable MySQLi error reporting
+mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+
+try {
+
+    // Create database connection
+    $conn = new mysqli(
+        $host,
+        $username,
+        $password,
+        $database
+    );
+
+    // Set character encoding
+    $conn->set_charset("utf8mb4");
+
+} catch (mysqli_sql_exception $e) {
+
+    // Display connection error during development
+    die("Database Connection Failed: " . $e->getMessage());
+
 }
-$conn->set_charset("utf8mb4");
+
 ?>
